@@ -1,0 +1,21 @@
+{
+  "name": "openclaw-honeypot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test --test-force-exit 'test/**/*.test.js'"
+  },
+  "dependencies": {
+    "@maxmind/geoip2-node": "^6.3.4",
+    "fastify": "^5.7.2",
+    "maxmind": "^5.0.3",
+    "uuid": "^13.0.0",
+    "ws": "^8.19.0"
+  }
+}

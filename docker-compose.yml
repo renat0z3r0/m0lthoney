@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  honeypot:
+    build: .
+    restart: unless-stopped
+    network_mode: host
+    cpus: 1
+    mem_limit: 512m
+    environment:
+      - HONEYPOT_SERVICE_NAME=openclaw
+      - FAKE_VERSION=2026.1.29
+      - MDNS_ENABLED=true
+      - MDNS_HOSTNAME=macmini-studio
+      - CANARY_PREFIX=HONEYPOT
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+    volumes:
+      - ./data:/app/data
+      - /etc/localtime:/etc/localtime:ro

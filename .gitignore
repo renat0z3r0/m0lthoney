@@ -1,0 +1,8 @@
+node_modules/
+data/attacks/
+data/ws-sessions/
+data/cdp-sessions/
+data/stats.json
+data/*.mmdb
+.env
+*.log
