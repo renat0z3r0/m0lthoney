@@ -1,4 +1,4 @@
-# OpenClaw Honeypot
+# OpenClaw / MoltBot Honeypot
 
 Honeypot that simulates a vulnerable [OpenClaw](https://github.com/example/openclaw) instance (v2026.1.29, pre-security-patch) exposed without authentication. Captures and classifies attacks for threat intelligence.
 
